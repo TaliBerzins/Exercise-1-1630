@@ -40,7 +40,7 @@ namespace WindowsForms_Exercise_1
 
         public void label5_Click(object sender, EventArgs e)
         {
-            label5.Text = "With ";
+            
         }
     }
 }
