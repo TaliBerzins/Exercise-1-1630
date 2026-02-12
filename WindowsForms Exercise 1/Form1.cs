@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -35,6 +36,13 @@ namespace WindowsForms_Exercise_1
             label5.Text = "Cost of total floorSize of " + floorSize + ": $" + floorCost;
             label6.Text = "Number of hours to install the floor: " + installationTime + " At a cost of $" + installationCost;
             label7.Text = "The total finished cost of the new floor is: $" + (installationCost + floorCost);
+        }
+        private void button2_Click(object sender, EventArgs e)
+        { // Option 1: Close only this form (if it's the main form, app exits)
+            // this.Close();
+
+            // Option 2: Exit the entire application
+            Application.Exit();
         }
 
         private void label1_Click(object sender, EventArgs e)
