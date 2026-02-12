@@ -20,7 +20,21 @@ namespace WindowsForms_Exercise_1
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            string length = textBox1.Text;
+            string width = textBox2.Text;
+            string sqFootCost = textBox3.Text;
+            int floorLength = Convert.ToInt32(length);
+            int floorWidth = Convert.ToInt32(width);
+            double sqFootCostInt = Convert.ToDouble(sqFootCost);
+            const double feetPerHour = 40;
+            const double costPerHour = 40;
+            int floorSize = floorLength * floorWidth;
+            double floorCost = sqFootCostInt * floorSize;
+            double installationTime = floorSize / feetPerHour;
+            double installationCost = costPerHour * installationTime;
+            label5.Text = "Cost of total floorSize of " + floorSize + ": $" + floorCost;
+            label6.Text = "Number of hours to install the floor: " + installationTime + " At a cost of $" + installationCost;
+            label7.Text = "The total finished cost of the new floor is: $" + (installationCost + floorCost);
         }
 
         private void label1_Click(object sender, EventArgs e)

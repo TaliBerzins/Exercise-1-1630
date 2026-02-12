@@ -108,7 +108,7 @@ namespace WindowsForms_Exercise_1
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(102, 13);
             this.label3.TabIndex = 6;
-            this.label3.Text = "Cost per square foot";
+            this.label3.Text = "Cost per square foot:";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // textBox3
@@ -134,7 +134,7 @@ namespace WindowsForms_Exercise_1
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(235, 13);
             this.label5.TabIndex = 9;
-            this.label5.Text = "Cost of total floorSize of: + floorSize  + floorCost);";
+            this.label5.Text = "";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
@@ -144,8 +144,7 @@ namespace WindowsForms_Exercise_1
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(381, 13);
             this.label6.TabIndex = 10;
-            this.label6.Text = "Number of hours to install the floor: + numHours + At a cost of: + installationCo" +
-    "st";
+            this.label6.Text = "";
             // 
             // label7
             // 
@@ -154,7 +153,7 @@ namespace WindowsForms_Exercise_1
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(341, 13);
             this.label7.TabIndex = 11;
-            this.label7.Text = "The total finished cost of the new floor is: + (installationCost + floorCost)";
+            this.label7.Text = "";
 
            
             // 
@@ -193,7 +192,7 @@ namespace WindowsForms_Exercise_1
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label4;
-        public System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
     }
